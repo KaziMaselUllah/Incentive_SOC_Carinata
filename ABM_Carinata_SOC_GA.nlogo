@@ -263,7 +263,7 @@ to cultivate
    ifelse a? = true [set pcolor red] [set pcolor green]        ;;we do not assume farmers having negetive experience will never adopt energy crop.
    if a? = true [set LandCarinata Land * LandRatio]
 
-   set TotLandAllocate precision (sum [LandCarinata] of  of turtles with [a? = true]) 2
+   set TotLandAllocate precision (sum [LandCarinata] of turtles with [a? = true]) 2
 
     ;file-write count turtles with [a? = TRUE] file-write  TotLandAllocate file-print "\t"
     ]
